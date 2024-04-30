@@ -15,10 +15,10 @@ const About = () => {
             <img src={aboutImg} alt="" />
           </div>
           <div className="about-text">
-            <h2 className="about-title fs-26 ls-1">About BookHub</h2>
+            <h2 className="about-title fs-26 ls-1">About E-library</h2>
             <p className="fs-17">
               The E-library is a powerful online Library tool designed to make
-              your book creation process seamless and professional. Whether
+              your materia creation process seamless and professional. Whether
               you’re an aspiring author or an experienced writer, this free tool
               offers a range of features to enhance your writing journey.
             </p>

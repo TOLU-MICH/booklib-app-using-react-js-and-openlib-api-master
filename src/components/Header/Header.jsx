@@ -10,15 +10,15 @@ const Header = () => {
         <Navbar />
         <div className="header-content flex flex-c text-center text-white">
           <h2 className="header-title text-capitalize">
-            find your book of choice.
+            find your material of choice.
           </h2>
           <br />
           <p className="header-text fs-18 fw-3">
             {" "}
             The E-library is a powerful online Library tool designed to make
-            your book creation process seamless and professional. Whether you’re
-            an aspiring author or an experienced writer, this free tool offers a
-            range of features to enhance your writing journey.
+            your materials creation process seamless and professional. Whether
+            you’re an aspiring author or an experienced writer, this free tool
+            offers a range of features to enhance your writing journey.
           </p>
           <SearchForm />
         </div>
