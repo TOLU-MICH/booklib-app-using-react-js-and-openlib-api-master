@@ -20,7 +20,7 @@ const BookDetails = () => {
     async function getBookDetails() {
       try {
         const response = await axios.get(`${URL}${id}.json`);
-        const data = await response.json();
+        const data = await response.data;
         console.log(data);
 
         if (data) {
