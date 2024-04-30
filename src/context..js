@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useContext, useEffect } from "react";
 import { useCallback } from "react";
-const URL = "https://openlibrary.org/search.json?title=";
+const URL = "https://openlibrary.org/search.json?q=";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -9,6 +9,8 @@ const AppProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [resultTitle, setResultTitle] = useState("");
+
+  console.log(searchTerm.split(" ").join("+"));
 
   const fetchBooks = useCallback(async () => {
     setLoading(true);

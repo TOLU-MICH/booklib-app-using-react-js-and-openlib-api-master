@@ -20,6 +20,9 @@ const BookDetails = () => {
     async function getBookDetails() {
       try {
         const response = await axios.get(`${URL}${id}.json`);
+        // console.log(
+        //   await axios.get(`https://openlibrary.org/books/${id}.json`)
+        // );
         const data = await response.data;
         console.log(data);
 
@@ -33,9 +36,7 @@ const BookDetails = () => {
             subjects,
           } = data;
           const newBook = {
-            description: description
-              ? description.value
-              : "No description found",
+            description: description ? description : "No description found",
             title: title,
             cover_img: covers
               ? `https://covers.openlibrary.org/b/id/${covers[0]}-L.jpg`
