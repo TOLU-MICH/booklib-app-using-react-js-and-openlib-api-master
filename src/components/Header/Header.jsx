@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import SearchForm from "../SearchForm/SearchForm";
 import "./Header.css";
+import SearchFormThesis from "../SearchFormThesis/SearchForm";
 
 const Header = () => {
+  const [thesis, setThesis] = useState(false);
+  console.log(thesis);
   return (
     <div className="holder">
       <header className="header">
@@ -20,7 +23,19 @@ const Header = () => {
             you’re an aspiring author or an experienced writer, this free tool
             offers a range of features to enhance your writing journey.
           </p>
-          <SearchForm />
+          {!thesis ? <SearchForm /> : <SearchFormThesis />}
+          <button
+            type="submit"
+            className="flex flex-c bg-white p-3 px-4 rounded-xl text-black mt-4 font-bold"
+            onClick={() => setThesis(!thesis)}
+          >
+            thesis:
+            {!thesis ? (
+              <span>off</span>
+            ) : (
+              <span className="text-red-600">on</span>
+            )}
+          </button>
         </div>
       </header>
     </div>

@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("the lost world");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(true);
   const [resultTitle, setResultTitle] = useState("");
 
   console.log(searchTerm.split(" ").join("+"));
@@ -72,6 +73,9 @@ const AppProvider = ({ children }) => {
         setSearchTerm,
         resultTitle,
         setResultTitle,
+        searchTerm,
+        setPage,
+        page,
       }}
     >
       {children}
