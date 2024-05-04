@@ -54,7 +54,7 @@ const ThesisList = () => {
     console.log(data[page[0]?.details]);
   return (
     <section className="booklist">
-      <div className="container">
+      <div className="">
         <div className="section-title">{/* <h2>{resultTitle}</h2> */}</div>
         {page !== undefined && page.length !== 0 ? (
           <PDFViewer file={data[page[0]?.details]} />
