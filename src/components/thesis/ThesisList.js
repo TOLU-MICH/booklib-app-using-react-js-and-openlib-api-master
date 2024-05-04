@@ -24,6 +24,7 @@ import {
 const data = [
   pdf,
   pdf1,
+  "",
   pdf3,
   pdf4,
   pdf5,
@@ -32,9 +33,10 @@ const data = [
   pdf8,
   pdf9,
   pdf10,
-  pdf12,
   pdf11,
+  pdf12,
 ];
+console.log("length");
 
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 //   "pdfjs-dist/build/pdf.worker.min.js",

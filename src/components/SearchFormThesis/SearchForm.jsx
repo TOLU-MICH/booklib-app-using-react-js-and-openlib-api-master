@@ -33,7 +33,7 @@ const SearchFormThesis = () => {
       details: 5,
     },
     {
-      name: "Kumar-MDEP-1634463",
+      name: "Kumar MDEP 1634463",
       details: 6,
     },
     {
@@ -49,15 +49,15 @@ const SearchFormThesis = () => {
       details: 9,
     },
     {
-      name: "Reports on the-future-of-emerging-markets-duttagupta-and-pazarbasioglu (1)",
+      name: "Reports on the future of emerging markets duttagupta and pazarbasioglu",
       details: 10,
     },
     {
-      name: "The_Evolution_of_Data_Science_A_New_Mode_of_Knowle",
+      name: "The Evolution of Data Science A New Mode of Knowledge",
       details: 11,
     },
     {
-      name: "WHO Scientifc Report",
+      name: "WHO Scientific Report",
       details: 12,
     },
     // Add more items as needed
