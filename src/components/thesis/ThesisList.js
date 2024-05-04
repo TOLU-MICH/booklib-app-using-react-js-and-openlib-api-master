@@ -36,10 +36,10 @@ const data = [
   pdf11,
 ];
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.min.js",
+//   import.meta.url
+// ).toString();
 
 const ThesisList = () => {
   const { searchTerm, loading, resultTitle, page } = useGlobalContext();
@@ -50,6 +50,8 @@ const ThesisList = () => {
 
   if (loading) return <Loading />;
 
+  if (page !== undefined && page.length !== 0)
+    console.log(data[page[0]?.details]);
   return (
     <section className="booklist">
       <div className="container">
